@@ -1,0 +1,87 @@
+#first Thing after setup a new machine 
+# sudo apt-get update && sudo apt-get upgrade
+# sudo apt-get install vim && sudo apt-get install git-core
+# sudo apt-get install flashplugin-installer
+go to the below link install adobe-flashplugin
+#http://get.adobe.com/flashplayer/
+
+######################################################
+########################################
+#############################
+##################
+######
+$$$$$$$$$$$$
+
+First install must have plugin for firefox:-
+ghostry,firebug,flashgot,weblizer, rapportive
+
+#now install pip for python
+sudo apt-get install python-pip
+sudo pip install dbgp vim-debug pep8 flake8 pyflakes
+
+#now move to the editor of your choice:-
+vim is my best friend:D
+take any vundle from anyone these links:-
+https://github.com/gmarik/vundle/wiki/Examples
+
+or else go with this :-
+https://github.com/mutewinter/dot_vim
+read and insatll or else
+
+#insatll rake too
+sudo apt-get install rake
+
+git clone http://github.com/mutewinter/dot_vim.git ~/.vim
+cd ~/.vim
+rake vim:link to make the .vimrc symbolic link
+
+to install rake we need ruby,install ruby latest
+#####
+	sudo apt-get install curl
+        #installing rvm the manager for ruby
+        curl -L get.rvm.io | bash -s stable --auto
+        now you need to check
+        rvm requirements
+      or go with below 
+       sudo apt-get install libreadline6-dev zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev autoconf libgdbm-dev libncurses5-dev automake libtool bison libffi-dev
+      
+       sudo apt-get install libyaml-dev
+        
+       rvm pkg install openssl
+       rvm autolibs
+       rvm autolibs enable 
+       rvm autolibs enable 3
+       rvm install 2.0.0 --with-openssl-dir=$HOME/.rvm/usr --verify-downloads 1
+      
+      #
+      put this in your .bashrc, but not complsion okay move on 
+      echo if [ -s "$HOME/.rvm/scripts/rvm" ] ; then
+  . "$HOME/.rvm/scripts/rvm"
+elif [ -s "/usr/local/rvm/scripts/rvm" ] ; then
+  . "/usr/local/rvm/scripts/rvm"
+fi
+ > ~/.bashrc 
+      #
+ 
+       ln -s ~/.rvm /usr/local/rvm
+       /bin/bash --login
+       rvm use 2.0.0
+       ruby -v
+       rvm --default use 2.0.0
+
+       # installig rails 4
+       rvm gemset create rails-4.0
+       rvm 2.0.0@rails-4.0
+       gem install rails
+#######
+   
+ #now run the rake
+ rake vim:link
+
+ #install vundle with 
+ git clone http://github.com/gmarik/vundle.git bundle/vundle
+  
+ vim +BundleInstall +qall 
+Enjoy enhanced productivity, increased levitation, reduced watermelon-related accidents, and startling sex appeal.
+
+ 
