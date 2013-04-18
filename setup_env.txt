@@ -84,4 +84,31 @@ fi
  vim +BundleInstall +qall 
 Enjoy enhanced productivity, increased levitation, reduced watermelon-related accidents, and startling sex appeal.
 
- 
+http://wiki.quantsoftware.org/index.php?title=QSToolKit_Installation_Guide_Ubuntu
+wget http://pypi.python.org/packages/source/Q/QSTK/QSTK-0.2.5.tar.gz
+tar -xzvf QSTK-0.2.5.tar.gz
+cd QSTK-0.2.5
+sudo sh UbuntuInstalltion.sh
+sudo python setup.py install
+
+# now installing LAMP(apache,mysql,php)
+
+apache2 apache2-mpm-prefork apache2-utils apache2.2-common libapache2-mod-php5 libapr1 libaprutil1 libdbd-mysql-perl libdbi-perl libnet-daemon-perl libplrpc-perl libpq5 mysql-client-5.5 mysql-common mysql-server mysql-server-5.5 php5-common php5-mysql
+
+#installing node.js
+sudo apt-get install nodejs
+
+# now installing nginx 
+sudo apt-get install python-software-properties
+sudo -s
+nginx = stable
+add-apt-repository ppa:nginx/$nginx
+apt-get update
+apt-get install nginx
+
+#little config to ipv6 error to default_server with site-available
+do it like same
+listen 80;
+listen [::]:80 ipv6pnly=on default_server;
+
+
